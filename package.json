@@ -1,0 +1,30 @@
+{
+  "name": "electron_tutorial",
+  "version": "1.0.0",
+  "description": "desc_test",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "package": "electron-forge package",
+    "make": "electron-forge make"
+  },
+  "author": "me",
+  "license": "ISC",
+  "devDependencies": {
+    "@electron-forge/cli": "^6.4.2",
+    "@electron-forge/maker-deb": "^6.4.2",
+    "@electron-forge/maker-rpm": "^6.4.2",
+    "@electron-forge/maker-squirrel": "^6.4.2",
+    "@electron-forge/maker-zip": "^6.4.2",
+    "@electron-forge/plugin-auto-unpack-natives": "^6.4.2",
+    "@electron-forge/publisher-github": "^6.4.2",
+    "electron": "^27.0.0"
+  },
+  "dependencies": {
+    "@paymoapp/active-window": "^2.0.5",
+    "electron-log": "^4.4.8",
+    "electron-squirrel-startup": "^1.0.0"
+  },
+  "type": "commonjs"
+}

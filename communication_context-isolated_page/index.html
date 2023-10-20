@@ -1,0 +1,11 @@
+<script>
+  window.onmessage = (event) => {
+    if (event.source === window && event.data === 'main-world-port') {
+      const [ port ] = event.ports
+      port.onmessage = (event) => {
+        console.log('from main process:', event.data)
+        port.postMessage(event.data.test * 2)
+      }
+    }
+  }
+</script>
